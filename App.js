@@ -7,6 +7,7 @@ import { store } from "./react-redux/Store";
 
 
 
+
 function App() {
 
 
@@ -23,5 +24,6 @@ function App() {
     </div>
   );
 }
+console.log(store);
 
 export default App;

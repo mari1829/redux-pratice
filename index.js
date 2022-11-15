@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Parrrntcompo from './Props-passing/Parrrntcompo';
 
 // import Slice from './react-redux/Slice';
 // import { Store } from '@reduxjs/toolkit';

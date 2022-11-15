@@ -6,19 +6,19 @@ import {useraction} from "./Slice"
 
 function Result() {
 
-    
-  let state = useSelector((state)=>state);
-//   console.log(state);
+    let state=useSelector((state)=> state)
+  
+  console.log("result",state);
 
 
-  console.log(state.data);
+  console.log(state.data.user);
 let dispatch = useDispatch();
 
 // console.log(state);
 
 let fuc = ()=>{
 console.log('wrk');
-    dispatch(useraction([...state.data,'kumar']))
+    dispatch(useraction([...state.data.user,'kumar']))
 
 }
 
@@ -29,11 +29,11 @@ console.log('wrk');
     <div>
         <button onClick={()=>fuc()}>click</button>
         
-        {state.data.map((ele)=>
+        {state.data.user.map((ele)=>
 
-        
        
-        <div>{ele}</div>
+        <div>{ele}
+        </div>
         )}
          
 
